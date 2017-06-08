@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'static#home', controller: 'static_pages', as: 'home'
+  root 'static_pages#home', as: 'home'
 end
