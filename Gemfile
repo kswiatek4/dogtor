@@ -12,6 +12,7 @@ gem 'haml-rails'
 gem 'simple_form'
 gem 'draper'
 gem 'decent_exposure'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
