@@ -28,3 +28,7 @@ group :development do
   gem 'scss_lint', require: false
   gem 'haml_lint', require: false
 end
+
+group :test do
+  gem 'factory_girl_rails'
+end
