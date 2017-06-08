@@ -13,6 +13,7 @@ gem 'simple_form'
 gem 'draper'
 gem 'decent_exposure'
 gem 'devise'
+gem 'cancancan'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
