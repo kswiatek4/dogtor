@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 gem 'simple_form'
 gem 'draper'
+gem 'decent_exposure'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
