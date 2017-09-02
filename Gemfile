@@ -25,6 +25,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.5'
   gem 'selenium-webdriver'
+  gem 'xray-rails'
 end
 
 group :development do
