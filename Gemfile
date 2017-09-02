@@ -1,38 +1,40 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 5.1.1'
-gem 'sqlite3'
-gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'bootstrap', '~> 4.0.0.beta'
+gem 'cancancan'
 gem 'coffee-rails', '~> 4.2'
-gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
-gem 'haml-rails'
-gem 'simple_form'
-gem 'draper'
 gem 'decent_exposure'
 gem 'devise'
-gem 'cancancan'
+gem 'draper'
+gem 'haml-rails'
+gem 'jbuilder', '~> 2.5'
+gem 'jquery-rails'
+gem 'puma', '~> 3.7'
+gem 'rails', '~> 5.1.1'
+gem 'sass-rails', '~> 5.0'
+gem 'simple_form'
+gem 'sqlite3'
+gem 'turbolinks', '~> 5'
+gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'faker'
   gem 'pry'
   gem 'pry-rails'
-  gem 'faker'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'selenium-webdriver'
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
+  gem 'haml_lint', require: false
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rubocop', require: false
   gem 'scss_lint', require: false
-  gem 'haml_lint', require: false
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'web-console', '>= 3.3.0'
 end
 
 group :test do
