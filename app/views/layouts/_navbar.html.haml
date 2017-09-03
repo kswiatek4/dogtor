@@ -1,0 +1,22 @@
+%nav.navbar.navbar-expand-md.navbar-custom.navbar-light.fixed-top
+  .container
+    = link_to home_path, { class: "navbar-brand mx-auto" } do
+      Dogtor
+      %i.fa.fa-paw{"aria-hidden" => "true"}
+    %button.navbar-toggler{"aria-controls" => "navbarToggler-5", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarToggler-5", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarToggler-5.collapse.navbar-collapse.justify-content-end
+      %ul.navbar-nav.mt-2.mt-md-0
+        %li.nav-item{ class: ("active" if current_page?(home_path))}
+          = link_to home_path, { class: "nav-link" } do
+            Home
+            - if current_page?(home_path)
+              %span.sr-only (current)
+        %li.nav-item{ class: ("active" if current_page?(about_path))}
+          = link_to about_path, { class: "nav-link" } do
+            About
+        %li.nav-item{ class: ("active" if current_page?(contact_path))}
+          = link_to contact_path, { class: "nav-link" } do
+            Contact
+        %li.nav-item
+          %a.btn.btn-outline-success.btn-outline{:href => "#"} Buy Now
