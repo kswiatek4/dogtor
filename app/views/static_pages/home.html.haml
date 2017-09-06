@@ -1,12 +1,29 @@
+%nav.navbar.navbar-toggleable-sm.navbar-custom.navbar-light
+  .container
+    %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarToggler-5", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarToggler-5", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    %a.navbar-brand{:href => "#"} Dogtor
+    #navbarToggler-5.collapse.navbar-collapse.justify-content-end
+      %ul.navbar-nav.mt-2.mt-md-0
+        %li.nav-item.active
+          %a.nav-link{:href => "#"}
+            Home
+            %span.sr-only (current)
+        %li.nav-item
+          %a.nav-link{:href => "#"} About
+        %li.nav-item
+          %a.nav-link{:href => "#"} Contact
+        %li.nav-item
+          %a.btn.btn-outline-success.btn-outline{:href => "#"} Register
 .cover-container.pb-5
   .cover-inner.container
-    %p.lead Lorem ipsum
+    %p.lead Take care of your pet today
     .divider
     %h1.jumbotron-heading
       Say
       %em hello
       to our
-      %strong Startup UI Kit
+      %strong Dogtor
     .row
-      .offset-md-4.col-md-4.mt-5.mx-auto
+      .offset-md-4.col-md-4.mt-5
         %button.btn.btn-lg.btn-success.pill-btn{:type => "submit"} Get Started
